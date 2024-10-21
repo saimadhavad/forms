@@ -1,0 +1,102 @@
+body {
+    width: 100%;
+    background-image: url("./images/bg-image.jpg");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.parentContainer {
+    width: 900px;
+    margin: 10px auto;
+    background-color: white;
+    /* border: 1px solid; */
+    /* box-sizing: border-box; */
+}
+
+.jobAppHeading h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: #c0504d;
+    color: white;
+    padding: 15px;
+
+}
+.headings {
+    color: #c0504d;
+}
+hr {
+    border: 1px dashed #c0504d;
+   
+}
+.jobDetails {
+    max-width: 100%;
+    padding: 10px;
+}
+/* form div {
+    border: 1px solid;
+} */
+form {
+    display: inline-block;
+}
+form label {
+    width: 246px;
+    display: inline-block;
+}
+.innerLabel {
+    width: auto;
+}
+.fullName,.DOB,.gender,.education,.resume,.address,.email {
+    margin: 10px;
+    box-sizing: border-box;
+    
+}
+#resume{
+    padding: 10px;
+    border: 1px dotted gray;
+}
+.address {
+    background-color: white;
+    /* position: relative; */
+}
+.streetAddress {
+    display: flex;
+    
+  }
+  .sideLabel {
+    position: relative;
+    left: 249px;
+    bottom: 15px;
+  }
+  .cityStateDetails,
+  .postalCountryDetails,  .referenceFullName{
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .fullName{
+
+    display: flex;
+    justify-content:space-between;
+
+  }
+
+  .designation{
+
+      display: flex;
+    justify-content:space-between;
+
+  }
+ .jobPersonalDetails,.employmentDetails,.reference1,.reference2 {
+    margin-bottom: 20px;
+ }
+ .applyButton {
+    text-align: center;
+
+ }
+ button {
+    background-color: #c0504d;
+    color: white;
+    width:100px;
+    padding: 5px;
+    font-size: 1rem;
+ }
