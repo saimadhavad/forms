@@ -1,102 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+  }
 body {
-    width: 100%;
-    background-image: url("./images/bg-image.jpg");
-    background-repeat: no-repeat;
-    object-fit: contain;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #606c88;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+     color: #fff;
+    /* height: 100vh; */
 }
 .parentContainer {
     width: 900px;
-    margin: 10px auto;
-    background-color: white;
-    /* border: 1px solid; */
-    /* box-sizing: border-box; */
-}
-
-.jobAppHeading h1 {
-    font-size: 1.8rem;
-    text-align: center;
-    background-color: #c0504d;
-    color: white;
+    background: #fff;
     padding: 15px;
-
-}
-.headings {
-    color: #c0504d;
-}
-hr {
-    border: 1px dashed #c0504d;
+    margin: 10px auto;
+    border-radius: 5px 5px 0 0;
+    text-align: left;
    
 }
-.jobDetails {
-    max-width: 100%;
-    padding: 10px;
+.parentContainer h1 {
+  background-color: #606c88;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 5px 5px 0 0;
+  font-weight: 600;
+
 }
-/* form div {
-    border: 1px solid;
-} */
-form {
-    display: inline-block;
+.personalInfo h2, .employmentDetails h2, 
+.referenceOne h2, .referenceTwo h2 {
+    color: #606c88;
+    font-size: 1.4rem;
+    /* font-weight: 500; */
+    border-bottom: 1px dashed #606c88;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-form label {
-    width: 246px;
-    display: inline-block;
-}
-.innerLabel {
-    width: auto;
-}
-.fullName,.DOB,.gender,.education,.resume,.address,.email {
-    margin: 10px;
-    box-sizing: border-box;
-    
-}
-#resume{
-    padding: 10px;
-    border: 1px dotted gray;
-}
-.address {
-    background-color: white;
-    /* position: relative; */
-}
-.streetAddress {
+
+.formGroup {
     display: flex;
-    
-  }
-  .sideLabel {
-    position: relative;
-    left: 249px;
-    bottom: 15px;
-  }
-  .cityStateDetails,
-  .postalCountryDetails,  .referenceFullName{
-    display: flex;
-    justify-content:space-between;
-  }
-
-  .fullName{
-
-    display: flex;
-    justify-content:space-between;
-
-  }
-
-  .designation{
-
-      display: flex;
-    justify-content:space-between;
-
-  }
- .jobPersonalDetails,.employmentDetails,.reference1,.reference2 {
-    margin-bottom: 20px;
- }
- .applyButton {
-    text-align: center;
-
- }
- button {
-    background-color: #c0504d;
-    color: white;
-    width:100px;
-    padding: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 10px;
+}
+.formGroup label {
     font-size: 1rem;
- }
+    color: #333;
+    font-weight:500;
+    flex-basis: 25%;
+}
+.formGroup span {
+    color: red;
+}
+.formGroup .firstLastNameInput,.formGroup .maleradioBTN {
+    display: flex;
+    flex-direction: row;
+}
+.inputRight {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    gap:10px;
+}
+.inputRight input[type="text"],
+.inputRight input[type="email"], .inputRight select, 
+.inputRight textarea, .inputRight input[type="number"],
+.inputRight input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.inputRight input[type="date"], .inputRight input[type="datetime-local"]{
+    width: 50%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.cityState, .postalCountry {
+    display: flex;
+    gap: 10px;
+}
+
+.cityState select,
+.postalCountry input,
+.postalCountry select {
+    width: 100%;
+}
+
+.applyButton {
+    text-align: center;
+}
+.applyButton button {
+    background-color: #606c88;
+    color: white;
+    width: 100px;
+   padding: 5px;
+   font-size: 1.1rem;
+   border: 0px;
+}

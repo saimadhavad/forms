@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms INPUT TYPES | Practise</title>
+    <style>
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      form {
+        background-color: cornflowerblue;
+        display: inline-block;
+        position: relative;
+        left: 200px;
+        padding: 50px;
+      }
+      form label {
+        width: 300px;
+        display: inline-block;
+        font-size: 1.5rem;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      form div {
+        margin: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      fieldset {
+        border: 2px solid gold;
+        margin: 20px;
+      }
+      legend {
+        font-size: 1.5rem;
+      }
+      .innerLabel {
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>INPUT TYPES</h1>
+    <form action="">
+      <fieldset class="dateInputTypes">
+        <legend>Date Input Types</legend>
+        <div>
+          <label for="date">DATE</label>
+          <input type="date" id="date" />
+        </div>
+        <div>
+          <label for="dateTimeLocal">DATE TIME LOCAL</label>
+          <input type="datetime-local" id="dateTimeLocal" />
+        </div>
+        <div>
+          <label for="month">MONTH</label>
+          <input type="month" id="month" />
+        </div>
+        <div>
+          <label for="week">WEEK</label>
+          <input type="week" id="week" />
+        </div>
+        <div>
+          <label for="time">TIME</label>
+          <input type="time" id="time" />
+        </div>
+      </fieldset>
+
+      <fieldset class="buttonInputTypes">
+        <legend>Button Input Types</legend>
+        <div>
+          <label for="button">Button</label>
+          <input type="button" id="button" value="BUTTON" />
+        </div>
+        <div>
+          <label for="submit">Submit</label>
+          <input type="submit" id="submit" value="SUBMIT" />
+        </div>
+        <div>
+          <label for="reset">Reset</label>
+          <input type="reset" id="reset" value="RESET" />
+        </div>
+        <div>
+          <label for="">Image</label>
+          <input
+            type="image"
+            src="./images/clickhere.png"
+            width="110px"
+            height="40px"
+            value="Image"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset class="numberFilePassword">
+        <legend>Number File Password</legend>
+        <div>
+          <label for="number">Number</label>
+          <input type="number" id="number" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+        </div>
+        <div>
+          <label for="file">File</label>
+          <input type="file" id="file" multiple />
+          <!-- by adding multiple it will upload multiple files -->
+        </div>
+      </fieldset>
+
+      <fieldset class="Radio Checkbox">
+        <legend>Radio CheckBox</legend>
+        <div>
+          <label for="">Gender</label>
+          <label class="innerLabel" for="male">male</label>
+          <input type="radio" name="gender" id="male" />
+          <label class="innerLabel" for="female">female</label>
+          <input type="radio" name="gender" id="female" />
+          <label class="innerLabel" for="others">others</label>
+          <input type="radio" name="gender" id="others" />
+        </div>
+        <div>
+          <label for="">Languages Known</label>
+          <label class="innerLabel" for="Telugu">Telugu</label>
+          <input type="checkbox" id="Telugu" />
+          <label class="innerLabel" for="Hindi">Hindi</label>
+          <input type="checkbox" id="Hindi" />
+          <label class="innerLabel" for="English">English</label>
+          <input type="checkbox" id="English" />
+          <label class="innerLabel" for="Tamil">Tamil</label>
+          <input type="checkbox" id="Tamil" />
+          <label class="innerLabel" for="Kannada">Kannada</label>
+          <input type="checkbox" id="Kannada" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Email URL Hidden Search Color Range Text Tel</legend>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="url">URL</label>
+          <input type="url" id="url" />
+        </div>
+        <div>
+          <label for="hidden">Hidden</label>
+          <input type="hidden" id="hidden" />
+        </div>
+        <div>
+          <label for="Search">Search</label>
+          <input
+            type="search"
+            id="Search"
+            placeholder="you can search here.."
+          />
+        </div>
+        <div>
+          <label for="color">Color</label>
+          <input type="color" id="color" />
+        </div>
+        <div>
+          <label for="range">Range</label>
+          <input type="range" id="range" />
+        </div>
+        <div>
+          <label for="text">Text</label>
+          <input type="text" id="text" />
+        </div>
+        <div>
+          <label for="tel">Tel</label>
+          <input type="tel" id="tel" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
